@@ -181,9 +181,12 @@ table {
     display: block;
     filter: brightness(80%);
     z-index: 3;
-    /* outline: 30px solid white;
-    outline-offset: -30px; */
 }
+
+/* brightness 대신 이미지에만 filter 기능을 넣고 싶을 때 아래 참조 */
+/* .portfolio-item1 {
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(portfolio-1.jpg);
+} */
 
 .footer-bg {
     width: 100%;
