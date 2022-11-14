@@ -159,6 +159,7 @@ table {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
+
 }
 
 .card-items {
@@ -172,14 +173,16 @@ table {
     padding-top: 50px;
     line-height: 2;
     text-align: left;
-    z-index: 1;
+    z-index: 2;
 }
 
 .card-items img {
     width: 100%;
     display: block;
     filter: brightness(80%);
-    z-index: 2;
+    z-index: 3;
+    /* outline: 30px solid white;
+    outline-offset: -30px; */
 }
 
 .footer-bg {
@@ -207,6 +210,19 @@ table {
 .footer-cr {
     width: 100%;
     text-align: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 0 0 0px white inset;
+    transition: all 0.5s;
+}
+
+.card-items:hover .overlay{
+    box-shadow: 0 0 0 30px white inset;
 }
 
 @media screen and (max-width: 768px) {
