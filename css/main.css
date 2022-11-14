@@ -48,21 +48,28 @@ table {
 .main-bg {
     display: flex;
     width: 100%;
-    height: 350px;
+    padding: 30px;
+    padding-bottom: 0;
     background: linear-gradient(cornflowerblue, mediumslateblue);
 }
 
 .main-content {
-    width: 50%;
-    padding: 80px;
-    padding-top: 30px;
+    width: 60%;
+    padding: 30px;
 }
 
 .main-img {
-    width: 50%;
-    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
     padding-bottom: 0;
-    text-align: right;
+    text-align: center;
+}
+
+.main-img img {
+    width: 100%;
+    max-width: 250px;
 }
 
 .btn-grey {
@@ -91,7 +98,6 @@ table {
 
 .offer-bg {
     width: 100%;
-    height: 300px;
     padding: 30px;
     text-align: center;
     background-color: mediumslateblue;
@@ -116,7 +122,7 @@ table {
 
 .offer-items-item {
     width: 25%;
-    margin: 5px;
+    padding: 5px;
 }
 
 .offer-icons {
@@ -201,4 +207,36 @@ table {
 .footer-cr {
     width: 100%;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main-bg {
+        flex-wrap: wrap;
+    }
+    
+    .main-content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-img {
+        width: 100%;
+    }
+    
+    .offer-items {
+        flex-wrap: wrap;
+    }
+    
+    .offer-items-item {
+        width: 50%;
+    }
+    
+    .card-items {
+        width: 100%;
+    }
+    
+    .card-items-txt {
+        padding: 20px;
+        padding-top: 30px;
+    }
 }
