@@ -48,7 +48,7 @@ table {
 .main-bg {
     display: flex;
     width: 100%;
-    height: 300px;
+    height: 350px;
     background: linear-gradient(cornflowerblue, mediumslateblue);
 }
 
@@ -78,7 +78,7 @@ table {
     align-items: center;
     /* padding: 1px; */
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-color: white;
     text-align: center;
 }
@@ -91,7 +91,7 @@ table {
 
 .offer-bg {
     width: 100%;
-    height: 250px;
+    height: 300px;
     padding: 30px;
     text-align: center;
     background-color: mediumslateblue;
@@ -111,11 +111,68 @@ table {
     display: flex;
     margin: auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .offer-items-item {
     width: 25%;
     margin: 5px;
+}
+
+.offer-icons {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    color: mediumslateblue;
+    padding: 15px;
+    margin: auto;
+}
+
+.card-bg {
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.card-bg p {
+    margin: 8px;
+}
+
+.cart-title {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card-items {
+    width: 50%;
+    position: relative;
+}
+
+.card-items-txt {
+    position: absolute;
+    padding: 40px;
+    padding-top: 50px;
+    line-height: 2;
+    text-align: left;
+    z-index: 1;
+}
+
+.card-items img {
+    width: 100%;
+    display: block;
+    filter: brightness(80%);
+    z-index: 2;
 }
 
